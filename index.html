@@ -551,10 +551,6 @@
       min-height: 100vh
     }
 
-    .w-1\/2 {
-      width: 50%
-    }
-
     .w-2\/3 {
       width: 66.666667%
     }
@@ -820,6 +816,10 @@
         display: flex
       }
 
+      .md\:w-1\/2 {
+        width: 50%
+      }
+
       .md\:w-1\/3 {
         width: 33.333333%
       }
@@ -889,8 +889,8 @@
     <div class="flex flex-center"><img src="./logo.svg" class="w-52"></div>
     <div class="container-md mt-6">
       <h1 class="text-3xl">Index of all my posts by tag</h1>
-      <div class="flex">
-        <div class="w-1/2 mt-10">
+      <div class="md:flex">
+        <div class="md:w-1/2 mt-10">
           <h2 class="text-xl">Posts by tag</h2>
           <div class="mt-4">
             <h3 class="text-lg">#ab</h3>
@@ -1051,7 +1051,7 @@
             </ul>
           </div>
         </div>
-        <div class="w-1/2 mt-10">
+        <div class="md:w-1/2 mt-10">
           <h2 class="text-xl">Guest posts</h2>
           <div class="mt-4">
             <ul class="list-disc list-inside">
@@ -1071,5 +1071,4 @@
     </div>
   </main>
 </body>
-
 </html>
